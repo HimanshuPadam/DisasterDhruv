@@ -6,7 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.disasterdhruv.databinding.ActivityMainBinding
+import com.example.disasterdhruv.databinding.ActivityMainBinding // Import your project ActivityMainBinding (Replace "disasterdhruv" with your project name)
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
         val webSettings: WebSettings = binding.webView.settings
         webSettings.javaScriptEnabled = true
-        binding.webView.loadUrl("https://uidai.gov.in/en/")
+        binding.webView.loadUrl("https://uidai.gov.in/en/") //Replace the URL with your URL
     }
     override fun onBackPressed() {
         if (binding.webView.canGoBack()) {
